@@ -1,0 +1,10 @@
+server: 
+  port: 9001
+spring: 
+  application: 
+    name: cloud-police
+eureka:
+  client: 
+    service-url: 
+      defaultZone: http://slave1:8761/eureka/,http://slave2:8762/eureka/   
+
