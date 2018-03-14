@@ -14,10 +14,7 @@ public class Cloud114App {
 	private static final Logger logger = LoggerFactory.getLogger(Cloud114App.class);
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String profiles = sc.nextLine();
-		logger.info("加载配置文件：{}", profiles);
-		new SpringApplicationBuilder(Cloud114App.class).profiles(profiles).web(true).run(args);
+		new SpringApplicationBuilder(Cloud114App.class).web(true).run(args);
 		logger.info("114 服务平台已启动");
 	}
 
