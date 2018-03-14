@@ -1,0 +1,9 @@
+server: 
+  port: 8762
+spring: 
+  application: 
+    name: cloud-114
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://slave1:8761/eureka/

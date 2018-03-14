@@ -1,0 +1,12 @@
+server: 
+  port: 8761
+spring: 
+  application: 
+    name: cloud-114
+eureka: 
+  server: 
+    # 配置eureka服务器定时清理服务列表时间， 默认60秒清理一次
+    eviction-interval-timer-in-ms: 30
+  client: 
+    service-url: 
+      defaultZone: http://slave2:8762/eureka/   
