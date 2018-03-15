@@ -3,7 +3,10 @@ server:
 spring: 
   application: 
     name: cloud-police
-eureka:
+eureka: 
+  instance: 
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
   client: 
     service-url: 
       defaultZone: http://slave1:8761/eureka/,http://slave2:8762/eureka/   
