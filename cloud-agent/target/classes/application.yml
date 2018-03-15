@@ -4,10 +4,9 @@ spring:
   application: 
     name: agent-police
 eureka:
-  instance: 
-    lease-renewal-interval-in-seconds: 30
-    lease-expiration-duration-in-seconds: 90
   client: 
+    #10秒获取一次服务列表
+    registry-fetch-interval-seconds: 10
     service-url: 
       defaultZone: http://slave1:8761/eureka/,http://slave2:8762/eureka/   
 
